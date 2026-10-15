@@ -16,7 +16,8 @@
   "observability": {
     "enabled": false,
     "logs": {
-      "enabled": true
+      "enabled": true,
+      "invocation_logs": true
     },
     "traces": {
       "enabled": true
@@ -26,6 +27,18 @@
     "binding": "AI",
     "remote": true
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "4bdcfa92-982c-4e1b-bf50-ed5d2daaa6dc"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "6b3219c79c5a47578f504abe392a2ae9"
+    }
+  ],
   "triggers": {
     "crons": ["0 0 * * *"] // Run backup task daily at 00:00 UTC.
   }
